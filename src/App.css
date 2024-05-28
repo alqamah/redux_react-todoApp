@@ -11,7 +11,7 @@ h1{
   text-align: center;
   margin: 48px;
   font-weight: bold;
-  color: rgb(199, 59, 108);
+  color: blue;
 }
 
 @media (prefers-reduced-motion: no-preference) {

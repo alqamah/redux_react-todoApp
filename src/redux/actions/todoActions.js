@@ -1,9 +1,9 @@
-//ACTION CONSTANTS
-export const ADD_TODO = "ADD_TODO";
-export const TOGGLE_TODO = "TOGGLE_TODO";
 
-//ACTIONS FUNCTIONS
-const addTodo = (text) =>({ text, type: ADD_TODO });
-const toggleTodo = (index) => ({index, type: TOGGLE_TODO});
+// Action constants.
 
-export {addTodo, toggleTodo};
+export const ADD_TODO="ADD Todo";
+export const TOGGLE_TODO="Toggle Todo";
+
+// Action Creators
+export const addTodo = (text)=>({text, type:ADD_TODO});
+export const toggleTodo = (index)=>({index, type: TOGGLE_TODO});
