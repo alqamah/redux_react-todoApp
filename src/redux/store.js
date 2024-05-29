@@ -1,15 +1,22 @@
 
-// const redux = require("redux");
-
-import * as redux from "redux";
-import { combineReducers } from "redux";
+// import * as redux from "redux";
+// import { combineReducers } from "redux";
+import { configureStore } from "@reduxjs/toolkit";
 import { noteReducer } from "./reducers/noteReducer";
 import {todoReducer} from "./reducers/todoReducer";
 
-const result = combineReducers({
-    todos:todoReducer,
-    notes:noteReducer
-})
+// const result = combineReducers({
+//     todos:todoReducer,
+//     notes:noteReducer
+// })
 
-export const store = redux.createStore(result);
+//export const store = redux.createStore(result);
+
+export const store = configureStore({
+    reducer:{
+        todoReducer,
+        noteReducer
+    }
+}) 
+
 
