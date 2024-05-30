@@ -53,3 +53,4 @@ const noteSlice = createSlice({
 
 export const noteReducer = noteSlice.reducer;
 export const noteActions = noteSlice.actions;
+export const noteSelector = (state)=> state.noteReducer;

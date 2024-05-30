@@ -2,11 +2,13 @@ import "./NoteList.css";
 import { useSelector, useDispatch } from "react-redux";
 //import { deleteNote } from "../../redux/actions/noteActions";
 import { noteActions } from "../../redux/reducers/noteReducer";
-import { noteReducer } from "../../redux/reducers/noteReducer";
+//import { noteReducer } from "../../redux/reducers/noteReducer";
+import { noteSelector } from "../../redux/reducers/noteReducer";
 
 function NoteList() {
     //const notes=[];
-    const {notes} = useSelector((state)=> state.noteReducer);
+    //const {notes} = useSelector((state)=> state.noteReducer);
+    const {notes} = useSelector(noteSelector);
     const disptach = useDispatch();
   return (
     <div className="container">
