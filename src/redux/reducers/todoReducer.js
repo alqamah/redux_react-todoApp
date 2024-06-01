@@ -1,6 +1,5 @@
 
 import { createSlice } from "@reduxjs/toolkit";
-import { ADD_TODO, TOGGLE_TODO } from "../actions/todoActions";
 
 const initialState={
     todos:[
